@@ -1,0 +1,20 @@
+{
+    "status": "ok", 
+    "results": [
+        {
+            "id": 0, 
+            "time": "2016-04-20", 
+            "waterHeight": 123, 
+            "lastWaterHeight": 123, 
+            "drankWaterHeight": 123, 
+            "drankWaterML": 123
+        }, {
+            "id": 1, 
+            "time": "2016-04-21", 
+            "waterHeight": 123, 
+            "lastWaterHeight": 123, 
+            "drankWaterHeight": 123, 
+            "drankWaterML": 123
+        }
+    ]
+}

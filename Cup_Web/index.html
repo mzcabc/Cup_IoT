@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mindy's Cup">
+    <meta name="author" content="Mindy Cong">
+    <link rel="icon" href="favicon.ico">
+    <title>Mindy's Cup</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">水杯</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>DEBUG</h1>
+        <p>
+          id: <span id="id"></span><br />
+          time: <span id="time"></span><br />
+          waterHeight: <span id="waterHeight"></span><br />
+          lastWaterHeight: <span id="lastWaterHeight"></span><br />
+          drankWaterHeight: <span id="drankWaterHeight"></span><br />
+          drankWaterML: <span id="drankWaterML"></span><br />
+        </p>
+      </div>
+
+    </div>
+
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $.getJSON("cup.json", function(obj){
+        $("#id").html(obj.results[0].id);
+        $("#time").html(obj.results[0].time);
+        $("#waterHeight").html(obj.results[0].waterHeight);
+        $("#lastWaterHeight").html(obj.results[0].lastWaterHeight);
+        $("#drankWaterHeight").html(obj.results[0].drankWaterHeight);
+        $("#drankWaterML").html(obj.results[0].drankWaterML);
+      });
+    </script>
+  </body>
+</html>
