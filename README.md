@@ -1,7 +1,5 @@
 # Smart Cup
 
-## 规格说明书
-
 主要功能
 
 - 自动续水
@@ -19,8 +17,16 @@
 1. 杯中水喝光后加满
 2. 保持杯中水满
 
-## 连线图
+**连线图**
 
 ![Cup_bb](Docs/Cup_bb.png "Cup_bb")
 
-`/Extra`: 一些使用传感器的学习资料.
+**文件夹**
+
+`/Cup_Arduino`: Arduino 端.
+
+`/Cup_Arduino`: Web 端.
+
+`/Docs`: 文档.
+
+`/Extra`: 所用传感器资料.
